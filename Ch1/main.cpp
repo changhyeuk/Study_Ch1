@@ -8,9 +8,18 @@
 
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout <<" Hello, World"<< std::endl;
-    std::cout << "Hello, World!\n";
+int main(void)
+{
+    int val1;
+    std::cout<<" The first number : ";
+    std::cin>>val1;
+    
+    int val2;
+    std::cout<<" The second number : ";
+    std::cin>>val2;
+    
+    int result = val1 + val2;
+    std::cout<<" The Sum will be : "<< result <<std::endl;
     return 0;
+
 }
