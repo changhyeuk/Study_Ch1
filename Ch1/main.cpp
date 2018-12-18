@@ -8,11 +8,26 @@
 
 #include <iostream>
 
+namespace BestComImpl
+{
+    void SimpleFunc(void)
+    {
+        std::cout<<" The function was defined by BestComImpl "<<std::endl;
+    }
+}
+
+namespace ProgComImpl
+{
+    void SimpleFunc(void)
+    {
+        std::cout<<" The function was defiened by ProgComImpl "<<std::endl;
+    }
+}
+
+
 int main()
 {
-    int x = 5;
-    std::cout<< x <<'\n';
-    std::cout<< &x <<'\n';
-    std::cout<< *&x <<'\n';
+    BestComImpl::SimpleFunc();
+    ProgComImpl::SimpleFunc();
     return 0;
 }
