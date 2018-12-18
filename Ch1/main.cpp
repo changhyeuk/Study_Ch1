@@ -8,18 +8,25 @@
 
 #include <iostream>
 
+void MyFunc(void)
+{
+    std::cout<<" MyFun(void) called "<<std::endl;
+}
+
+void MyFunc(char c)
+{
+    std::cout<<" MyFunc(char c) called"<<std::endl;
+}
+
+void MyFunc(int a, int b)
+{
+    std::cout<<" MyFunc( int a, int b ) called"<<std::endl;
+}
+
 int main(void)
 {
-    int num;
-    
-    std::cout<<" What kind of GuGuDan you want make : ";
-    std::cin>> num;
-    
-    for ( int i = 1; i <= 9 ; ++i )
-    {
-        std::cout<< num << " * "<< i <<" = "<< num * i << std::endl;
-    }
-    
+    MyFunc();
+    MyFunc('A');
+    MyFunc(12, 13);
     return 0;
-    
 }
