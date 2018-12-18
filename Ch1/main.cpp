@@ -10,17 +10,16 @@
 
 int main(void)
 {
-    char name[100];
-    char lang[200];
+    int num;
     
-    std::cout<<" What is your name : ";
-    std::cin>>name;
+    std::cout<<" What kind of GuGuDan you want make : ";
+    std::cin>> num;
     
-    std::cout<<" What is the favorite language : ";
-    std::cin>>lang;
-    
-    std::cout<<" My name is "<< name << std::endl;
-    std::cout<<" My favorite lange is "<< lang <<std::endl;
+    for ( int i = 1; i <= 9 ; ++i )
+    {
+        std::cout<< num << " * "<< i <<" = "<< num * i << std::endl;
+    }
     
     return 0;
+    
 }
