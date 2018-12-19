@@ -8,16 +8,16 @@
 
 #include <iostream>
 
-namespace Hybrid {
-    void HybFunc(void) {
-        std::cout<<" So Simple function "<<std::endl;
-        std::cout<<" In namespace Hybrid "<<std::endl;
-    }
-}
+using std::cin;
+using std::cout;
+using std::endl;
 
 int main(void)
 {
-    using Hybrid::HybFunc;
-    HybFunc();
+    int num = 20;
+    cout<<" Hello World ! "<<endl;
+    cout<<" Hello "<< " World !"<<endl;
+    cout<< num <<' ' << 'A';
+    cout<<' ' << 3.14 << endl;
     return 0;
 }
