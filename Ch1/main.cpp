@@ -8,41 +8,16 @@
 
 #include <iostream>
 
-namespace BestComImpl
-{
-    void SimpleFunc(void);
+namespace Hybrid {
+    void HybFunc(void) {
+        std::cout<<" So Simple function "<<std::endl;
+        std::cout<<" In namespace Hybrid "<<std::endl;
+    }
 }
 
-namespace BestComImpl
+int main(void)
 {
-    void PrettyFunc(void);
-}
-
-namespace ProgComImpl
-{
-    void SimpleFunc(void);
-}
-
-
-int main()
-{
-    BestComImpl::SimpleFunc();
+    using Hybrid::HybFunc;
+    HybFunc();
     return 0;
-}
-
-void BestComImpl::SimpleFunc(void)
-{
-    std::cout<<" The function was defined by BestComImpl "<<std::endl;
-    PrettyFunc();
-    ProgComImpl::SimpleFunc();
-}
-
-void BestComImpl::PrettyFunc(void)
-{
-    std::cout<<" So Pretty !!"<<std::endl;
-}
-
-void ProgComImpl::SimpleFunc(void)
-{
-     std::cout<<" The function was defiened by ProgComImpl "<<std::endl;
 }
